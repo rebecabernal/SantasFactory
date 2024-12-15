@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('santa_list', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('kid_id')->constrained('kids')->onDelete('cascade');
+            $table->foreignId('toy_id')->constrained('toys')->onDelete('cascade');
             $table->timestamps();
         });
     }
