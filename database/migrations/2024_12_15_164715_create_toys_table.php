@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('toys', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('photo');
+            $table->longText('description');
+            $table->smallInteger('min_age');
             $table->timestamps();
         });
     }
