@@ -9,6 +9,15 @@ class Toy extends Model
 {
     use HasFactory;
 
-    public function kids(){
-      return $this->belongsToMany(Kid::class, 'santa_list')->withTimestamps();}
+    protected $fillable = [
+        'name',
+        'photo',
+        'description',
+        'min_age'
+    ];
+
+    public function kids()
+    {
+        return $this->belongsToMany(Kid::class, 'santa_list')->withTimestamps();
+    }
 }
