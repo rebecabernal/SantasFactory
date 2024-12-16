@@ -11,6 +11,6 @@ class Kid extends Model
     use HasFactory;
 
     public function toys(){
-        return $this->belongsToMany(Toy::class, 'santa_list')->withTimestamps();}
+        return $this->belongsToMany(Toy::class, 'kid_toy')->withTimestamps();}
 }
 

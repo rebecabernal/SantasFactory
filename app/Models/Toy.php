@@ -18,6 +18,6 @@ class Toy extends Model
 
     public function kids()
     {
-        return $this->belongsToMany(Kid::class, 'santa_list')->withTimestamps();
+        return $this->belongsToMany(Kid::class, 'kid_toy')->withTimestamps();
     }
 }
