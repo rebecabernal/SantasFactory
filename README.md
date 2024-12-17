@@ -118,5 +118,15 @@ You'll see an **url** that is going to take you to a website.
 
 ## :white_check_mark: Tests
 
+> [!IMPORTANT]
+> It's important to test the project so we can check if it works correctly and to do that use this command in the **VSC** terminal:
+
+```
+php artisan test
+```
+(insert screenshoot)
+
+***
+
 
 
