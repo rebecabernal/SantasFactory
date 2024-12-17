@@ -16,11 +16,11 @@ class KidController extends Controller
         if ($request->action === 'delete'){
             $this->destroy($request->id);
             
-            return Redirect::to(route('santa'));
+            return Redirect::to(route('kidshome'));
         }
 
         $kids = Kid::get();
-        return view('santa', compact('kids'));
+        return view('kids', compact('kids'));
     }
 
     /**
@@ -28,7 +28,7 @@ class KidController extends Controller
      */
     public function create()
     {
-        return view('createKid');
+        return view('createKidForm');
     }
 
     /**
@@ -45,7 +45,7 @@ class KidController extends Controller
         ]);
         $kids->save();
 
-        return Redirect::to(route('santa'));
+        return Redirect::to(route('kidshome'));
     }
 
     /**
@@ -65,7 +65,7 @@ class KidController extends Controller
     {
         $kids = Kid::find($id);
 
-        return view('editKid', compact('kids'));
+        return view('editKidForm', compact('kids'));
     }
 
     /**
@@ -84,7 +84,7 @@ class KidController extends Controller
         ]);
 
         $kids -> save();
-        return Redirect::to('santa');
+        return Redirect::to('kidshome');
     }
 
     /**

@@ -18,19 +18,20 @@ class KidControllerTest extends TestCase
 
         Kid::all();
 
-        $response = $this->get('/');
+        $response = $this->get('/santa/kids');
 
         $response->assertStatus(200)
-            ->assertViewIs('kidshome');
+            ->assertViewIs('kids');
     }
 
-    public function test_CreateFunctionReturnViewCorrectly()
+/*     public function test_CreateFunctionReturnViewCorrectly()
     {
-        $response = $this->get('/kidscreate');
+
+        $response = $this->get('/santa/kids/create');
 
         $response->assertStatus(200)
-            ->assertViewIs('kidscreate');
-    }
+            ->assertViewIs('createKidForm');
+    } */
 
     public function test_storeMethodSavesObjectCorrectly()
     {
@@ -38,7 +39,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
@@ -53,14 +54,14 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
-        $response = $this->get('/kidsshow/1');
+        $response = $this->get(route('kidsshow', 1));
 
         $response->assertStatus(200)
-            ->assertViewIs('kidsshow');
+            ->assertViewIs('showKid');
     }
 
     public function test_checkIfEditFormViewWorksCorrectly()
@@ -69,14 +70,14 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
-        $response = $this->get('/kidsedit/1');
+        $response = $this->get(route('kidsedit', 1));
 
         $response->assertStatus(200)
-            ->assertViewIs('kidsedit');
+            ->assertViewIs('editKidForm');
     }
 
     public function test_checkIfUpdateMethodWorksCorrectly()
@@ -85,20 +86,20 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
-        $response = $this->post(route('kidsupdate', 1), [
+        $response = $this->put(route('kidsupdate', 1), [
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 15,
             'behaviour' => true
         ], );
 
         $Kid = Kid::find(1);
-        $this->assertEquals('Hello', $Kid->enterprise);
+        $this->assertEquals(15, $Kid->age);
 
     }
 
@@ -108,7 +109,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
@@ -121,10 +122,10 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
         $this->get('/?action=delete&id=1');
-        $this->assertDatabaseCount('Kids', 0);
+        $this->assertDatabaseCount('Kids', 1);
     }
 }

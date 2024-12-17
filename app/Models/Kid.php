@@ -9,6 +9,13 @@ class Kid extends Model
 
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'surname',
+        'photo',
+        'age',
+        'behaviour'
+    ];
 
     public function toys(){
         return $this->belongsToMany(Toy::class, 'kid_toy')->withTimestamps();}
