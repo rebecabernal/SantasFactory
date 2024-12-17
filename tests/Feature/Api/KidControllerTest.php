@@ -11,8 +11,8 @@ class KidControllerTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_CheckIfRecieveAllEntryOfOfferInJsonFile(){
-        $offer = Kid::factory(2)->create();
+    public function test_CheckIfRecieveAllEntryOfKidsInJsonFile(){
+        $Kids = Kid::factory(2)->create();
 
         $response = $this->get(route('apikidshome'));
        
@@ -20,9 +20,9 @@ class KidControllerTest extends TestCase
                  ->assertJsonCount(2);
     }
 
-    public function test_CheckIfCanDeleteEntryInOfferWithApi(){
+    public function test_CheckIfCanDeleteEntryInKidsWithApi(){
        
-        $offer = Kid::factory(2)->create();
+        $kids = Kid::factory(2)->create();
 
         $response = $this->delete(route('apikidsdestroy', 1));
 
@@ -33,13 +33,13 @@ class KidControllerTest extends TestCase
 
     }
 
-    public function test_CheckIfCanCreateNewEntryInOfferWithJsonFile()
+    public function test_CheckIfCanCreateNewEntryInKidsWithJsonFile()
     {
         $response = $this->post(route('apikidsstore'), [
             'name' => 'Pepito',
             'surname' => 'Grillo',
-            'photo' => 'Example.img',
-            'age' => '20',
+            'photo' => 'kids',
+            'age' => '16',
             'behaviour' => true
         ]);
 
@@ -48,49 +48,49 @@ class KidControllerTest extends TestCase
                 ->assertJsonCount(1);
     }
 
-    public function test_CheckIfCanUpdateEntryInJournalWithJsonFile()
+    public function test_CheckIfCanUpdateEntryInKidsWithJsonFile()
     {
         $response = $this->post(route('apikidsstore'), [
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
 
-        $data = ['enterprise' => 'Hello enterprise'];
+        $data = ['age' => 16];
         $response = $this->get(route('apikidshome'));
         $response->assertStatus(200)
                 ->assertJsonCount(1)
                 ->assertJsonFragment($data);
 
-        $response = $this->put('/api/apikidsupdate/1', [
+        $response = $this->put(route('apikidsupdate', 1), [
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 15,
             'behaviour' => true
         ]);
 
-        $data = ['enterprise' => 'Hello easter'];
+        $data = ['age' => 15];
         $response = $this->get(route('apikidshome'));
         $response->assertStatus(200)
                 ->assertJsonCount(1)
                 ->assertJsonFragment($data);
-    }
+    } 
 
     public function test_CheckIfFunctionShowWorks(){
         $response = $this->post(route('apikidsstore'), [
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
-            'age' => '20',
+            'age' => 16,
             'behaviour' => true
         ]);
-        $data = ['enterprise' => 'Hello easter', 'position' => 'Hello egg', 'state' => 0];
+        $data = ['name' => 'Pepito', 'surname' => 'Grillo','photo' => 'Example.img', 'age' => 16, 'behaviour' => 1 ];
         $response = $this->get(route('apikidsshow', 1));
         $response->assertStatus(200)
-                ->assertJsonCount(6)
+                ->assertJsonCount(8)
                 ->assertJsonFragment($data);
     }
 }

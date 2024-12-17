@@ -2,12 +2,12 @@
 @section('content')
 
     <div class="backBtnContainer">
-        <a href="{{ route('home') }}" class="backBtn">🔙</a>
+        <a href="{{ route('kidshome') }}" class="backBtn">🔙</a>
     </div>
 
     <div class="tableKid">
         <h2 class="form-title">Edit Kid</h2>
-        <form action="{{ route('update', $kid->id) }}" method="PUT" class="form-container">
+        <form action="{{ route('kidsupdate', $kid->id) }}" method="PUT" class="form-container">
 
             @csrf
 
