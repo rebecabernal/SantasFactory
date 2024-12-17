@@ -8,7 +8,7 @@
 
 - Minimum **test coverage** of **70%**.
 - Well-configured **project** and **user stories**.
-- **Elf routes** must contain the word *elves* and **Santa routes** must contain *Santa*
+- **Elf routes** must contain the word *elves* and **Santa routes** must contain *Santa*.
 - **Welcome page** must be a welcome to the toy factory.
   
 ***
@@ -95,22 +95,22 @@ You'll see an **url** that is going to take you to a website.
 >Be sure that your running npm and the server in **DIFFERENT** terminals, **DON'T** close these two terminals and **DON'T** use other commands in these two terminals.
 
 ***
-### Installation requirements
+### :floppy_disk: Installation requirements
 
 Before you start to read how to install the project you'll need these requirements:
 >[!NOTE]
 >If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
 ***
 
-- **XAMPP**
+:black_circle: **XAMPP**
 
-- Install **Composer**
+:black_circle: Install **Composer**
 
-- Install **NPM** in **Node.js**
+:black_circle: Install **NPM** in **Node.js**
 
-- **Xdebug** (for the tests coverage)
+:black_circle: **Xdebug** (for the tests coverage)
 
-- **Postman**
+:black_circle: **Postman**
 
 ***
 ## :mag_right:Project documentation
@@ -118,15 +118,15 @@ Before you start to read how to install the project you'll need these requiremen
 ### Endpoints
 ***
 
-#### Toy's table
+#### :teddy_bear:Toy's table
 (Insert endpoints)
 ***
 
-#### Children's table
+#### :girl:Children's table
 (Insert endpoints)
 ***
 
-#### Santa's list
+#### :gift:Santa's list
 (Insert endpoints)
 ***
 
