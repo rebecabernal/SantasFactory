@@ -6,6 +6,11 @@
 
 ## Requirements to achieve in this project:
 
+- Minimum **test coverage** of **70%**.
+- Well-configured **project** and **user stories**.
+- **Elf routes** must contain the word *elves* and **Santa routes** must contain *Santa*
+- **Welcome page** must be a welcome to the toy factory.
+
 ### Toy's table
 
 **Elves** should:
@@ -22,7 +27,7 @@
 - Be able to **insert, modify or delete a child** *(Endpoints)*.
 - Be able to see the **show** of children *(Endpoints and Blade)*.
 
-### Santas's list (PIVOT TABLE)
+### Santa's list (PIVOT TABLE)
 
 - If a child has **misbehaved** -> only give **1 gift** **(Coal)**.
 - If a child has **behaved well** ->  will receive **2 random gifts** from the list of toys (age appropriate) and those gifts can **NOT** be **repeated** to the same child
