@@ -1,4 +1,4 @@
-# SANTA'S FACTORY
+# :santa: SANTA'S FACTORY :christmas_tree:
 
 ## :bulb:Project description
 
@@ -12,7 +12,7 @@
 - **Welcome page** must be a welcome to the toy factory.
   
 ***
-### Toy's table
+### :teddy_bear:Toy's table
 
 **Elves** should:
 
@@ -21,7 +21,7 @@
 - Be able to see the **show** of a toy *(Endpoints and Blade)*.
   
 ***
-### Children's table
+### :girl:Children's table
 
 **Santa Claus** should:
 
@@ -30,7 +30,7 @@
 - Be able to see the **show** of children *(Endpoints and Blade)*.
   
 ***
-### Santa's list (PIVOT TABLE)
+### :gift:Santa's list (PIVOT TABLE)
 
 - If a child has **misbehaved** -> only give **1 gift** **(Coal)**.
 - If a child has **behaved well** ->  will receive **2 random gifts** from the list of toys (age appropriate) and those gifts can **NOT** be **repeated** to the same child.
@@ -41,7 +41,7 @@
 (Insert screenshoots)
 
 ***
-## Project Diagrams (BBDD)
+### Project Diagrams (BBDD)
 
 (Insert screenshoots)
 
