@@ -24,7 +24,7 @@
                 <tr>
                     <td>{{$toy->id}}</td>
                     <td>{{$toy->name}}</td>
-                    <td>{{$toy->photo}}</td>
+                    <td><img src="{{$toy->photo}}" alt="{{$toy->name}}"></td>
                     <td>{{$toy->description}}</td>
                     <td>+{{$toy->min_age}}</td>
                     <td>{{$toy->created_at->format('d/m/y')}}</td>

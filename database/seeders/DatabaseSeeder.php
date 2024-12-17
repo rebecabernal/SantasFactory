@@ -18,93 +18,93 @@ class DatabaseSeeder extends Seeder
         // AGE 3 TOYS
         Toy::factory()->create([
             'name' => 'Teddy Bear',
-            'photo' => 'img\toys\teddybear.jpg',
+            'photo' => '/img/toys/teddybear.jpg',
             'description' => 'A cute Teddy Bear',
             'min_age' => 3
         ]);
         Toy::factory()->create([
             'name' => 'Sports Car',
-            'photo' => 'img\toys\car.jpg',
+            'photo' => '/img/toys/car.jpg',
             'description' => 'A cool sports car',
             'min_age' => 3
         ]);
         Toy::factory()->create([
             'name' => 'Doll',
-            'photo' => 'img\toys\hatdoll.jpg',
+            'photo' => '/img/toys/hatdoll.jpg',
             'description' => 'A doll with a stylist hat',
             'min_age' => 3
         ]);
         Toy::factory()->create([
             'name' => 'Telephone',
-            'photo' => 'img\toys\telephone.webp',
+            'photo' => '/img/toys/telephone.webp',
             'description' => 'A telephone for gossiping with friends',
             'min_age' => 3
         ]);
         Toy::factory()->create([
             'name' => 'Train',
-            'photo' => 'img\toys\train.avif',
+            'photo' => '/img/toys/train.avif',
             'description' => 'A pretty cool train',
             'min_age' => 3
         ]);
         // AGE 7 TOYS
         Toy::factory()->create([
             'name' => 'Blocky Boat',
-            'photo' => 'img\toys\boatblocks.jpg',
+            'photo' => '/img/toys/boatblocks.jpg',
             'description' => 'An amazing boat made of blocks',
             'min_age' => 7
         ]);
         Toy::factory()->create([
             'name' => 'Bracelet Kit',
-            'photo' => 'img\toys\braceletset.jpg',
+            'photo' => '/img/toys/braceletset.jpg',
             'description' => 'A bracelet kit to make with friends',
             'min_age' => 7
         ]);
         Toy::factory()->create([
             'name' => 'Dinotrack',
-            'photo' => 'img\toys\dinotrack.jpg',
+            'photo' => '/img/toys/dinotrack.jpg',
             'description' => 'A cool dino-looking track for your cars',
             'min_age' => 7
         ]);
         Toy::factory()->create([
             'name' => 'Furby',
-            'photo' => 'img\toys\furby.webp',
+            'photo' => '/img/toys/furby.webp',
             'description' => 'Absolutely not a creepy toy',
             'min_age' => 7
         ]);
         Toy::factory()->create([
             'name' => 'Carrot Slime',
-            'photo' => 'img\toys\slime.jpg',
+            'photo' => '/img/toys/slime.jpg',
             'description' => 'A delicious carrot slime',
             'min_age' => 7
         ]);
         //AGE 12 TOYS
         Toy::factory()->create([
             'name' => 'Board Games Kit',
-            'photo' => 'img\toys\boardgame.jpg',
+            'photo' => '/img/toys/boardgame.jpg',
             'description' => 'A practical board game kit with plenty of games',
             'min_age' => 12
         ]);
         Toy::factory()->create([
             'name' => 'Cards Against Humanity',
-            'photo' => 'img\toys\cah.webp',
+            'photo' => '/img/toys/cah.webp',
             'description' => 'A harmless and jokeful game (Family Edition)',
             'min_age' => 12
         ]);
         Toy::factory()->create([
             'name' => 'Scratch Book',
-            'photo' => 'img\toys\scratchbook.webp',
+            'photo' => '/img/toys/scratchbook.webp',
             'description' => 'A fun and colorful scratch book',
             'min_age' => 12
         ]);
         Toy::factory()->create([
             'name' => 'Table tennis set',
-            'photo' => 'img\toys\tabletennis.webp',
+            'photo' => '/img/toys/tabletennis.webp',
             'description' => 'A mobile table tennis set',
             'min_age' => 12
         ]);
         Toy::factory()->create([
             'name' => 'Uno Flex',
-            'photo' => 'img\toys\unoflex.jpg',
+            'photo' => '/img/toys/unoflex.jpg',
             'description' => 'A new version of your favorite UNO game',
             'min_age' => 12
         ]);
