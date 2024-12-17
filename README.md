@@ -74,8 +74,8 @@ npm install
 ```
 ***
 3.) **Create** a *.env* file copying everything inside the existing file *.env.example* and **modify** the following **lines**:
-*DB_CONNECTION=mysql*
-*DB_DATABASE=jobSearch*
+* DB_CONNECTION=mysql
+* DB_DATABASE=jobSearch
 
 ***
 4.) Create a **database** in **MySQL**
@@ -115,4 +115,8 @@ You'll see an **url** that is going to take you to a website.
 #### Santa's list
 (Insert endpoints)
 ***
+
+## :white_check_mark: Tests
+
+
 
