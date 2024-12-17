@@ -109,6 +109,86 @@ class DatabaseSeeder extends Seeder
             'min_age' => 12
         ]);
 
-        Kid::factory(20)->create();
+        //KIDS
+        Kid::factory()->create([
+            'name' => 'Lucas',
+            'surname' => 'Martínez',
+            'photo' => '/img/kids/boy.jpg',
+            'age' => 4,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Sofía',
+            'surname' => 'Pérez',
+            'photo' => '/img/kids/girl.jpg',
+            'age' => 6,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Mateo',
+            'surname' => 'Gómez',
+            'photo' => '/img/kids/boy.jpg',
+            'age' => 5,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Camila',
+            'surname' => 'López',
+            'photo' => '/img/kids/girl.jpg',
+            'age' => 9,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Liam',
+            'surname' => 'Hernández',
+            'photo' => '/img/kids/boy.jpg',
+            'age' => 8,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Isabella',
+            'surname' => 'Ramírez',
+            'photo' => '/img/kids/girl.jpg',
+            'age' => 7,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Dylan',
+            'surname' => 'Torres',
+            'photo' => '/img/kids/boy.jpg',
+            'age' => 13,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Mía',
+            'surname' => 'Rojas',
+            'photo' => '/img/kids/girl.jpg',
+            'age' => 15,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Ethan',
+            'surname' => 'Vargas',
+            'photo' => '/img/kids/boy.jpg',
+            'age' => 16,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Emma',
+            'surname' => 'García',
+            'photo' => '/img/kids/girl.jpg',
+            'age' => 14,
+            'behaviour' => false,
+        ]);
+        
     }
 }
