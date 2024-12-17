@@ -6,6 +6,7 @@
 </div>
 
 <div class="tableToy">
+<h2 class="form-title">Toys</h2>
     <table class="table">
         <thead>
             <tr>
@@ -18,20 +19,23 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tb>
             @foreach ($toys as $toy)
                 <tr>
-                    <td>{{ $toy->id}}</td>
-                    <td>{{ $toy->name}}</td>
-                    <td>{{ $toy->photo}}</td>
-                    <td>{{ $toy->description}}</td>
-                    <td>+{{ $toy->min_age}}</td>
-                    <td>{{ $toy->created_at->format('d/m/y')}}</td>
-                    <td><a class="crudBtn" href="toys/show/{{$toy->id}}">👀</a><a class="crudBtn"
-                            href="toys/edit/{{$toy->id}}">📝</a><a class="crudBtn" href="?action=delete&id={{$toy->id}}">🗑️</a></td>
+                    <td>{{$toy->id}}</td>
+                    <td>{{$toy->name}}</td>
+                    <td>{{$toy->photo}}</td>
+                    <td>{{$toy->description}}</td>
+                    <td>+{{$toy->min_age}}</td>
+                    <td>{{$toy->created_at->format('d/m/y')}}</td>
+                    <td>
+                        <a class="crudBtn" href="toys/show/{{$toy->id}}">👀</a>
+                        <a class="crudBtn" href="toys/create">🆕</a>
+                        <a class="crudBtn"href="toys/edit/{{$toy->id}}">📝</a>
+                        <a class="crudBtn" href="?action=delete&id={{$toy->id}}">🗑️</a></td>
                 </tr>
             @endforeach
-        <tbody>
+        <tb>
     </table>
 </div>
 @endsection

@@ -5,6 +5,11 @@ section {
     width: 100%;
 }
 
+main{
+    background: linear-gradient(to right, #620202, #144414);
+}
+
+
 ul {
     list-style: none;
     padding: 0;

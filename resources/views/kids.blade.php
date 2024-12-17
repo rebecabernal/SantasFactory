@@ -6,6 +6,7 @@
 </div>
 
 <div class="tableKid">
+    <h2 class="form-title">Kids</h2>
     <table class="table">
         <thead>
             <tr>
@@ -35,8 +36,11 @@
                         @endif
                     </td>
                     <td>{{ $kid->created_at->format('d/m/y')}}</td>
-                    <td><a class="crudBtn" href="kids/show/{{$kid->id}}">👀</a><a class="crudBtn"
-                            href="kids/edit/{{$kid->id}}">📝</a><a class="crudBtn" href="?action=delete&id={{$kid->id}}">🗑️</a></td>
+                    <td>
+                        <a class="crudBtn" href="kids/show/{{$kid->id}}">👀</a>
+                        <a class="crudBtn" href="kids/create">🆕</a>
+                        <a class="crudBtn"href="kids/edit/{{$kid->id}}">📝</a>
+                        <a class="crudBtn" href="?action=delete&id={{$kid->id}}">🗑️</a></td>
                 </tr>
             @endforeach
         <tbody>
