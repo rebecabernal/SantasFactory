@@ -26,7 +26,7 @@
                     <td>{{$kid->id}}</td>
                     <td>{{$kid->name}}</td>
                     <td>{{$kid->surname}}</td>
-                    <td>{{$kid->photo}}</td>
+                    <td><img src="{{$kid->photo}}" alt="{{$kid->name}}"></td>
                     <td>{{$kid->age}}</td>
                     <td>
                         @if ($kid->behaviour === 1)
