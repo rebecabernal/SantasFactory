@@ -4,7 +4,7 @@
 
 **Santa Claus** asks us for help to manage his toy manufacturing and gift list for each child.
 
-## Requirements to achieve in this project:
+### Requirements to achieve in this project:
 
 - Minimum **test coverage** of **70%**.
 - Well-configured **project** and **user stories**.
@@ -46,24 +46,7 @@
 (Insert screenshoots)
 
 ***
-## Installation requirements
 
-Before you start to read how to install the project you'll need these requirements:
->[!NOTE]
->If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
-***
-
-- **XAMPP**
-
-- Install **Composer**
-
-- Install **NPM** in **Node.js**
-
-- **Xdebug** (for the tests coverage)
-
-- **Postman**
-
-***
 ## :scroll: Installation
 
 1.) **Clone** this repository:
@@ -112,7 +95,25 @@ You'll see an **url** that is going to take you to a website.
 >Be sure that your running npm and the server in **DIFFERENT** terminals, **DON'T** close these two terminals and **DON'T** use other commands in these two terminals.
 
 ***
-## Project documentation
+### Installation requirements
+
+Before you start to read how to install the project you'll need these requirements:
+>[!NOTE]
+>If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
+***
+
+- **XAMPP**
+
+- Install **Composer**
+
+- Install **NPM** in **Node.js**
+
+- **Xdebug** (for the tests coverage)
+
+- **Postman**
+
+***
+## :mag_right:Project documentation
 
 ### Endpoints
 ***
@@ -155,7 +156,7 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 (insert screenshoot)
 
 ***
-## Authors
+## :bust_in_silhouette: Authors
 - **Valeria Dobado**: https://github.com/ugotchriscoded
 - **Rebeca Bernal**: https://github.com/rebecabernal
 - **Talena Barbosa**: https://github.com/talenaa
