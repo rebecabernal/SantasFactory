@@ -12,13 +12,13 @@ Route::get('/elf/toys', [ToyController::class, 'index'])->name('toyshome');
 
 Route::delete('/elf/toys/{id}', [ToyController::class, 'destroy'])->name('toysdestroy');
 
-Route::get('/elf/toys', [ToyController::class, 'create'])->name('toyscreate');
-Route::post('/elf/toys', [ToyController::class, 'store'])->name('toysstore');
+Route::get('/elf/toys/create', [ToyController::class, 'create'])->name('toyscreate');
+Route::post('/elf/toys/store', [ToyController::class, 'store'])->name('toysstore');
 
-Route::get('/elf/toys/{id}', [ToyController::class, 'edit'])->name('toysedit');
+Route::get('/elf/toys/edit/{id}', [ToyController::class, 'edit'])->name('toysedit');
 Route::put('/elf/toys/{id}', [ToyController::class, 'update'])->name('toysupdate');
 
-Route::get('/elf/toys/{id}',[ToyController::class, 'show'])->name('toysshow');
+Route::get('/elf/toys/show/{id}',[ToyController::class, 'show'])->name('toysshow');
 
 //kidsroutes
 
@@ -29,7 +29,10 @@ Route::delete('/santa/kids/{id}', [KidController::class, 'destroy'])->name('kids
 Route::get('/santa/kids/create', [KidController::class, 'create'])->name('kidscreate');
 Route::post('/santa/kids/store', [KidController::class, 'store'])->name('kidsstore');
 
-Route::get('/edit/{id}', [KidController::class, 'edit'])->name('kidsedit');
+Route::get('/santa/kids/edit/{id}', [KidController::class, 'edit'])->name('kidsedit');
 Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('kidsupdate');
 
-Route::get('/santa/kids/{id}',[KidController::class, 'show'])->name('kidsshow');
+Route::get('/santa/kids/show/{id}',[KidController::class, 'show'])->name('kidsshow');
+
+
+Route::get('/', function(){ return view('home'); })->name('santashome');

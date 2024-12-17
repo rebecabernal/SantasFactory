@@ -51,7 +51,7 @@ ul li a:hover {
 }
 
 .cta-btn:hover {
-    transition: 0.8s all linear;
+    transition: 0.3s all linear;
     background-color: #27591b;
 }
 
