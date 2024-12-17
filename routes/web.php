@@ -29,7 +29,7 @@ Route::delete('/santa/kids/{id}', [KidController::class, 'destroy'])->name('kids
 Route::get('/santa/kids/create', [KidController::class, 'create'])->name('kidscreate');
 Route::post('/santa/kids/store', [KidController::class, 'store'])->name('kidsstore');
 
-Route::get('/santa/kids/edit/{id}', [KidController::class, 'edit'])->name('kidsedit');
+Route::get('/edit/{id}', [KidController::class, 'edit'])->name('kidsedit');
 Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('kidsupdate');
 
 Route::get('/santa/kids/{id}',[KidController::class, 'show'])->name('kidsshow');

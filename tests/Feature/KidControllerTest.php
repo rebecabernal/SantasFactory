@@ -24,14 +24,14 @@ class KidControllerTest extends TestCase
             ->assertViewIs('kids');
     }
 
-/*     public function test_CreateFunctionReturnViewCorrectly()
+     public function test_CreateFunctionReturnViewCorrectly()
     {
 
         $response = $this->get('/santa/kids/create');
 
         $response->assertStatus(200)
             ->assertViewIs('createKidForm');
-    } */
+    } 
 
     public function test_storeMethodSavesObjectCorrectly()
     {
@@ -125,7 +125,7 @@ class KidControllerTest extends TestCase
             'age' => 16,
             'behaviour' => true
         ]);
-        $this->get('/?action=delete&id=1');
-        $this->assertDatabaseCount('Kids', 1);
+        $this->get('/santa/kids/?action=delete&id=1');
+        $this->assertDatabaseCount('Kids', 0);
     }
 }

@@ -63,9 +63,9 @@ class KidController extends Controller
      */
     public function edit(string $id)
     {
-        $kids = Kid::find($id);
+        $kid = Kid::find($id);
 
-        return view('editKidForm', compact('kids'));
+        return view('editKidForm', compact('kid'));
     }
 
     /**
