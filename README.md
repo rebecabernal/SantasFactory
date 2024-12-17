@@ -164,4 +164,4 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 - **Diego Santamaría**: https://github.com/DinGo21
   
 ***
-
+## Languages and tools
