@@ -30,5 +30,12 @@
 ### Santa's list (PIVOT TABLE)
 
 - If a child has **misbehaved** -> only give **1 gift** **(Coal)**.
-- If a child has **behaved well** ->  will receive **2 random gifts** from the list of toys (age appropriate) and those gifts can **NOT** be **repeated** to the same child
+- If a child has **behaved well** ->  will receive **2 random gifts** from the list of toys (age appropriate) and those gifts can **NOT** be **repeated** to the same child.
+
+## :eye_speech_bubble: Project overview
+
+(Insert screenshoots)
+
+
+
 
