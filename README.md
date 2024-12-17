@@ -42,5 +42,65 @@
 
 ## Installation requirements
 
+Before you start to read how to install the project you'll need these requirements:
+>[!NOTE]
+>If you can't install xampp, look for any other local server that supports **MySQL** and **PHP**
+***
+
+1. XAMPP
+
+2. Install Composer
+
+3. Install NPM in Node.js
+
+4. Xdebug (for the tests coverage)
+
+5. Postman
+***
+
+## :scroll: Installation
+
+1. Clone this repository:
+```
+ https://github.com/rebecabernal/SantasFactory
+```
+
+2. Install **Composer** and **NPM**
+```
+composer install
+```
+```
+npm install
+```
+
+3. Create a .env file copying everything inside the existing file .env.example and modify the following lines:
+* DB_CONNECTION=mysql
+* DB_DATABASE=jobSearch
+
+4. Create a database in **MySQL**
+
+5. Now go to the VSC terminal and put the following command
+```
+php artisan migrate:fresh --seed
+```
+This command will generate all the tables.
+
+6. Open another terminal in **VSC** and put the following command
+```
+npm run dev
+```
+
+7. Open another terminal and run the server with this command
+```
+php artisan serve
+```
+You'll see an url that is going to take you to a website.
+
+>[!IMPORTANT]
+>Be sure that your running npm and the server in **DIFFERENT** terminals, **DON'T** close these two terminals and **DON'T** use other commands in these two terminals. 
+***
+
+
+
 
 
