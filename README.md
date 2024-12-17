@@ -156,5 +156,12 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 
 ***
 ## Authors
-
+- **Valeria Dobado**: https://github.com/ugotchriscoded
+- **Rebeca Bernal**: https://github.com/rebecabernal
+- **Talena Barbosa**: https://github.com/talenaa
+- **Rodrigo Lastra**: https://github.com/rodrigoo1604
+- **Pepe Gavilán**: https://github.com/sr-calcetines
+- **Diego Santamaría**: https://github.com/DinGo21
+  
+***
 
