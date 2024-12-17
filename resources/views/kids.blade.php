@@ -22,11 +22,11 @@
         <tbody>
             @foreach ($kids as $kid)
                 <tr>
-                    <td>{{ $kid->id}}</td>
-                    <td>{{ $kid->name}}</td>
-                    <td>{{ $kid->surname}}</td>
-                    <td>{{ $kid->photo}}</td>
-                    <td>{{ $kid->age}}</td>
+                    <td>{{$kid->id}}</td>
+                    <td>{{$kid->name}}</td>
+                    <td>{{$kid->surname}}</td>
+                    <td>{{$kid->photo}}</td>
+                    <td>{{$kid->age}}</td>
                     <td>
                         @if ($kid->behaviour === 1)
                             <span class="active">Good</span>
