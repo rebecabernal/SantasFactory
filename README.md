@@ -104,8 +104,15 @@ You'll see an **url** that is going to take you to a website.
 
 ### Endpoints
 
+#### Toy's table
+(Insert endpoints)
+***
 
+#### Children's table
+(Insert endpoints)
+***
 
-
-
+#### Santa's list
+(Insert endpoints)
+***
 
