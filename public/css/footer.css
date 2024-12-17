@@ -1,0 +1,24 @@
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.git {
+    border-radius: 50%;
+    width: 50px;
+    outline: 2px solid #fff;
+    gap: 20px;
+    transition-duration: .25s;
+}
+
+.git:hover {
+    outline-offset: 4px;
+    background-color: #144414;
+}
+
+.git:hover i {
+    animation: shake .25s;
+}
