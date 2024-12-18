@@ -118,11 +118,39 @@ Before you start to read how to install the project you'll need these requiremen
 ***
 
 #### :teddy_bear:Toy's table
-(Insert endpoints)
+#### Get toys
+<img width="272" alt="getToys" src="https://github.com/user-attachments/assets/759bbd6f-af81-40d5-a49f-986ee46e7609" />
+
+#### Post toy
+<img width="276" alt="postToy" src="https://github.com/user-attachments/assets/9d4bbc42-b47f-4713-8875-3f76be13192b" />
+
+#### Update toy
+<img width="277" alt="updateToy" src="https://github.com/user-attachments/assets/470c1248-96d0-4853-97c5-95f879048f61" />
+
+#### Delete toy
+<img width="280" alt="deleteToy" src="https://github.com/user-attachments/assets/559d1077-219e-4b6d-b583-5c1dd721b30b" />
+
+#### Show toy
+<img width="273" alt="showToy" src="https://github.com/user-attachments/assets/c26dbb7e-4ae2-478c-ba98-d2a6991ed82f" />
+
 ***
 
 #### :girl:Children's table
-(Insert endpoints)
+#### Get kids
+<img width="273" alt="getKids" src="https://github.com/user-attachments/assets/002c41d0-67d9-4802-b889-66fe8ce5af06" />
+
+#### Post kid
+<img width="274" alt="postKids" src="https://github.com/user-attachments/assets/ca7b8780-a0c0-4c2b-a403-b9afee7bba88" />
+
+#### Update kid
+<img width="275" alt="updateKids" src="https://github.com/user-attachments/assets/8da8d37d-7c9d-414c-9c18-cd2c7092aae6" />
+
+#### Delete kid
+<img width="274" alt="deleteKids" src="https://github.com/user-attachments/assets/e21df292-4998-4b4c-961b-716fe016aa40" />
+
+#### Show kid
+<img width="275" alt="showKids" src="https://github.com/user-attachments/assets/b2648991-ed37-4d27-8689-96b4a9983d0c" />
+
 ***
 
 #### :gift:Santa's list
