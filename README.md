@@ -43,10 +43,9 @@
 ***
 ### Project Diagrams (BBDD)
 
-(Insert screenshoots)
+![DiagramBBDD](https://github.com/user-attachments/assets/6fa747e7-1168-4103-baaa-781a269426be)
 
 ***
-
 ## :scroll: Installation
 
 1.) **Clone** this repository:
